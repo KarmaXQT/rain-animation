@@ -1,0 +1,24 @@
+html, body {padding: 0; margin: 0; overflow: hidden; cursor: default; height: 100%;}
+.nav {
+    position: absolute;
+    bottom: 2%;
+    font-family: monospace;
+}
+.nav.right {
+    text-align: right;
+    width: 100%;
+}
+.nav ul {
+    list-style: none;
+}
+.nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+.nav li.active a {
+    color: blue;
+}
