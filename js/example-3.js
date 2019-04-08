@@ -40,10 +40,10 @@ function checkRipple(ripple) {
     if (ripple.scale.x > options.sizeMax) {
         ripples.remove(ripple);
     }
-    else if ((ripple.scale.x > (ripple.position.x * 2 + size.boardX)) || (ripple.scale.x > (size.boardX - ripple.position.x * 2))) {
+    else if (((ripple.scale.x / 2) > (ripple.position.x + size.boardX)) || ((ripple.scale.x / 2) > (size.boardX - ripple.position.x))) {
         ripples.remove(ripple);
     }
-    else if ((ripple.scale.y > (ripple.position.z * 2 + size.boardZ)) || (ripple.scale.y > (size.boardZ - ripple.position.z * 2))) {
+    else if (((ripple.scale.y / 2) > (ripple.position.z + size.boardZ)) || ((ripple.scale.y / 2) > (size.boardZ - ripple.position.z))) {
         ripples.remove(ripple);
     }
 }

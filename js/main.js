@@ -57,10 +57,10 @@ function initLight() {
 }
 
 function initGround() {
-  var groundGeometry = new THREE.PlaneGeometry(size.boardX, size.boardZ);
+  var groundGeometry = new THREE.PlaneGeometry(size.boardX * 2, size.boardZ * 2);
   var groundMaterial = new THREE.MeshPhongMaterial({color: 0x333333});
   ground = new THREE.Mesh(groundGeometry,groundMaterial);
-  ground.rotateX(-Math.PI/2);
+  ground.rotation.x = - Math.PI / 2;
   ground.position.set(0,0,0);
   scene.add(ground);
 }

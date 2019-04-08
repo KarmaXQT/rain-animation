@@ -3,7 +3,8 @@ var menuLeft = [
     {title: 'Rain 2', url: 'example-2.html'},
     {title: 'Ripples', url: 'example-3.html'},
     {title: 'Emulation1', url: 'example-4.html'},
-    {title: 'Wind', url: 'example-5.html'}
+    {title: 'Wind', url: 'example-5.html'},
+    {title: 'Emulation2', url: 'example-6.html'}
 ];
 
 function addMenuEntries(definition, element, classNames){
